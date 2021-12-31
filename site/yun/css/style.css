@@ -1,0 +1,813 @@
+@charset "utf-8";
+
+/* 헤더 영역 */
+header {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+header > div {
+  position: relative;
+  width: 1094px;
+  margin: 0 auto;
+}
+
+header > div > h1 {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 174px;
+  text-indent: -9999px;
+  background-image: url(./../images/main_logo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header > div > h1 > a {
+  display: block;
+  height: 56px;
+}
+
+header > div > nav {
+  display: flex;
+  position: absolute;
+  left: 232px;
+  top: 36px;
+  width: 860px;
+}
+
+header > div > nav > .gnb {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 514px;
+}
+
+header > div > nav > .gnb > li > a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  color: #666;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header > div > nav > .gnb > li > a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+header > div > nav > .log {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 185px;
+  height: 20px;
+}
+
+header > div > nav > .log > li > a {
+  display: block;
+  width: 55px;
+  color: #686868;
+  font-weight: 500;
+  text-align: right;
+  background-image: url(./../images/iconbox_gnb_grey.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 0 2px;
+}
+
+header > div > nav > .log > li:last-child > a {
+  width: 95px;
+  background-image: url(./../images/iconbox_gnb_grey.png);
+  background-position: 0 -18px;
+}
+
+header > div > nav > .log > li > a:hover {
+  text-decoration: none;
+}
+
+/* 섹션 영역 */
+/* section > .ad1 */
+section > h2,
+section > .ad1 > h3,
+section > .ad2 > h3 {
+  display: none;
+}
+
+section > .ad1 {
+  position: fixed;
+  z-index: 100;
+  top: 15%;
+  left: 51%;
+  width: 214px;
+  margin-left: -49%;
+  padding: 20px 15px 20px 15px;
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 15px;
+}
+
+section > .ad1 > a {
+  display: block;
+  width: 32px;
+}
+
+section > .ad1 > ul > li > a:hover {
+  text-decoration: none;
+}
+
+section > .ad1 > ul > li:nth-of-type(1) > a {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+section > .ad1 > ul > li:nth-of-type(1) > a > span {
+  display: block;
+  width: 70px;
+  text-indent: -9999px;
+  background-image: url(./../images/bi_cho.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section > .ad1 > ul > li:nth-of-type(1) > a > p {
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+section > .ad1 > ul > li:nth-of-type(1) > a > p > span {
+  color: #ffbf13;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+section > .ad1 > ul > li:nth-of-type(2) > ol {
+  margin: 15px 0;
+}
+
+section > .ad1 > ul > li:nth-of-type(2) > ol > li {
+  padding: 0 10px;
+}
+
+section > .ad1 > ul > li:nth-of-type(2) > ol > li:hover {
+  display: inline-block;
+  background-color: #fde626;
+}
+
+section > .ad1 > ul > li:nth-of-type(2) > ol > li > a {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+section > .ad1 > ul > li:nth-of-type(2) > ol > li > a:hover {
+  text-decoration: none;
+}
+
+section > .ad1 > ul > li:nth-of-type(3) > a {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 15px 0;
+  border: 1px solid #000;
+  border-right: none;
+  border-left: none;
+}
+
+section > .ad1 > ul > li:nth-of-type(3) > a > span {
+  display: block;
+  width: 100px;
+  text-indent: -9999px;
+  background-image: url(./../images/bi_bus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section > .ad1 > ul > li:nth-of-type(3) > a > p {
+  margin-right: 30px;
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+section > .ad1 > ul > li:nth-of-type(3) > a > p > span {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+section > .ad1 > ul > li:nth-of-type(4) > a {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 15px 0 5px;
+}
+
+section > .ad1 > ul > li:nth-of-type(4) > a > span {
+  display: block;
+  width: 70px;
+  text-indent: -9999px;
+  background-image: url(./../images/bi_tok.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section > .ad1 > ul > li:nth-of-type(4) > a > p {
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+section > .ad1 > ul > li:nth-of-type(4) > a > p > span {
+  color: #ff5201;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* section > .ad2 */
+section > .ad2 {
+  position: fixed;
+  z-index: 200;
+  top: 84%;
+  right: 2%;
+  margin-left: 650px;
+}
+
+section > .ad2 > a {
+  display: block;
+  width: 65px;
+  height: 68px;
+}
+
+/* section > .app */
+section > .app {
+  height: 1073px;
+  background-color: #704499;
+  background-image: url(./../images/sc47_w_bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section > .app > h2 {
+  display: none;
+}
+
+section > .app > div {
+  position: relative;
+  width: 1094px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+section > .app > div > h2 {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 180px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+section > .app > div > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+}
+
+section > .app > div > ul > li {
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+section > .app > div > ul > li:after {
+  padding-left: 5px;
+  font-weight: 500;
+  font-family: "돋움";
+  content: ">";
+}
+
+section > .app > div > ul > li:last-child:after {
+  display: none;
+}
+
+section > .app > div > .app {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  width: 180px;
+  height: 80px;
+  margin-left: -80px;
+}
+
+section > .app > div > .app > img {
+  width: 100%;
+}
+
+section > .app > div > .app:after {
+  display: block;
+  position: absolute;
+  left: -230px;
+  top: 140px;
+  width: 620px;
+  border-bottom: 30px solid #342f71;
+  content: "";
+}
+
+section > .app > div > p {
+  position: absolute;
+  left: 250px;
+  top: 230px;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+section > .app > div > P + P {
+  position: absolute;
+  left: 180px;
+  top: 340px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+section > .app > div > .map {
+  overflow: hidden;
+  position: absolute;
+  left: 110px;
+  top: 510px;
+  width: 850px;
+  height: 430px;
+  border: 15px solid #fff;
+}
+
+section > .app > div > .map > img {
+  width: 100%;
+  height: 100%;
+}
+
+section > .app > div > .girl {
+  position: absolute;
+  left: 790px;
+  top: 350px;
+}
+
+/* section > .we */
+section > .we {
+  margin: 0 auto;
+  height: 2015px;
+  text-align: center;
+}
+
+section > .we:before {
+  display: block;
+  background-color: #f5f5f5;
+  height: 130px;
+  content: "";
+}
+
+section > .we:after {
+  display: block;
+  background-color: #f5f5f5;
+  height: 130px;
+  content: "";
+}
+
+section > .we > div {
+  width: 1054px;
+  margin: 0 auto;
+}
+
+section > .we > div > h3 {
+  font-size: 40px;
+  line-height: 160px;
+}
+
+section > .we > div > p {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+section > .we > div > ul {
+  width: 960px;
+  margin: 0 auto;
+}
+
+section > .we > div > ul > li {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 70px 0 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+section > .we > div > ul > li:last-child {
+  border-bottom: none;
+}
+
+section > .we > div > ul > li > span {
+  display: block;
+  width: 500px;
+  height: 356px;
+  text-indent: -9999px;
+  background-image: url(./../images/sc48_w_img.jpg);
+  background-repeat: no-repeat;
+}
+
+section > .we > div > ul > li:nth-of-type(2) > span {
+  background-position: 0 -495px;
+}
+
+section > .we > div > ul > li:last-child > span {
+  background-position: 0 -970px;
+  height: 260px;
+}
+
+section > .we > div > ul > li > div {
+  text-align: left;
+  padding-top: 20px;
+}
+
+section > .we > div > ul > li > div > h4 {
+  color: #e7e7e7;
+  font-weight: 100;
+  font-size: 90px;
+}
+
+section > .we > div > ul > li > div > h4 > .dot {
+  color: #fde626;
+}
+
+section > .we > div > ul > li:last-child > div {
+  padding: 0;
+}
+
+section > .we > div > ul > li > div > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* section > .speak */
+section > .speak {
+  height: 1030px;
+  color: #fff;
+  text-align: center;
+  background-color: #704499;
+  background-image: url(./../images/sc49_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center 578px;
+}
+
+section > .speak > div > h3 {
+  padding: 150px 0 30px;
+  font-size: 40px;
+}
+
+section > .speak > div > h3:after {
+  display: block;
+  border-top: 2px solid #fff;
+  margin: 50px 0 0 49%;
+  width: 25px;
+  content: "";
+}
+
+section > .speak > div > p:nth-of-type(1) {
+  display: inline-block;
+  color: #fce62c;
+  font-weight: 400;
+  font-size: 26px;
+  padding: 2px 0 20px;
+}
+
+section > .speak > div > p:nth-of-type(2) {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* section > .everyday */
+section > .everyday {
+  height: 1720px;
+}
+
+section > .everyday > div {
+  text-align: center;
+}
+
+section > .everyday > div > h3 {
+  font-size: 40px;
+  padding: 150px 0 50px;
+}
+
+section > .everyday > div > p {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+section > .everyday > div > ul {
+  width: 960px;
+  margin: 0 auto;
+}
+
+section > .everyday > div > ul > li {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 70px 0 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+section > .everyday > div > ul > li:last-child {
+  border-bottom: none;
+}
+
+section > .everyday > div > ul > li > .ed_bg {
+  display: block;
+  width: 580px;
+  height: 255px;
+  text-indent: -9999px;
+  background-image: url(./../images/sc50_w_img.jpg);
+  background-position: 0 0;
+}
+
+section > .everyday > div > ul > li:nth-of-type(2) > .ed_bg {
+  background-position: 0 -390px;
+}
+
+section > .everyday > div > ul > li:nth-of-type(3) > .ed_bg {
+  background-position: 0 -790px;
+}
+
+section > .everyday > div > ul > li > .right > span {
+  display: block;
+  width: 300px;
+  height: 150px;
+  text-indent: -9999px;
+  background-image: url(./../images/sc50_w_img_s.png);
+  background-position: center -10px;
+}
+
+section > .everyday > div > ul > li:nth-of-type(2) > .right > span {
+  background-position: center -396px;
+}
+
+section > .everyday > div > ul > li:nth-of-type(3) > .right > span {
+  background-position: center -794px;
+}
+
+section > .everyday > div > ul > li > .right > p {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* section > .still */
+section > .still {
+  height: 2050px; /*임시*/
+  background-color: #333;
+}
+
+section > .still > div {
+  color: #fff;
+  text-align: center;
+}
+
+section > .still > div > h3 {
+  padding: 150px 0 50px;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+section > .still > div > h3:after {
+  display: block;
+  border-top: 2px solid #fff;
+  margin: 20px 0 0 49%;
+  width: 25px;
+  content: "";
+}
+
+section > .still > div > p {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+section > .still > div > p + p {
+  padding-bottom: 60px;
+}
+
+section > .still > div > p > .yellow {
+  color: #fce62c;
+}
+
+section > .still > div > ul > li > img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* section > .now */
+section > .now {
+  height: 1390px; /*임시*/
+  background-color: #f5f5f5;
+}
+
+section > .now > div {
+  width: 1094px;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+}
+
+section > .now > div > h3 {
+  padding: 150px 0 50px;
+  font-size: 40px;
+}
+
+section > .now > div > p {
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 60px;
+}
+
+section > .now > div > ul {
+  width: 960px;
+  margin-left: 90px;
+}
+
+section > .now > div > ul > li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 55px;
+}
+
+section > .now > div > ul > li > .now_bg {
+  display: block;
+  width: 580px;
+  height: 225px;
+  text-indent: -9999px;
+  background-image: url(./../images/sc52_w_img.jpg);
+  background-position: 0 5px;
+}
+
+section > .now > div > ul > li:nth-of-type(2) > .now_bg {
+  background-position: 0 -271px;
+}
+
+section > .now > div > ul > li:nth-of-type(3) > .now_bg {
+  background-position: 0 -550px;
+}
+
+section > .now > div > ul > li > div {
+  text-align-last: left;
+}
+
+section > .now > div > ul > li > div > h4 {
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+
+section > .now > div > ul > li > div > p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* 푸터 영역 */
+
+footer {
+  height: 236px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+footer > div {
+  position: relative;
+  width: 1094px;
+  margin: 0 auto;
+}
+
+footer > div > .left {
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+footer > div > .left > nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+footer > div > .left > nav > ul > .white:before {
+  display: inline-block;
+  position: absolute;
+  padding-left: 40px;
+  color: #f5f5f5;
+  width: 50px;
+  border-right: 1px solid #000;
+  content: "";
+}
+
+footer > div > .left > nav > ul > .white > a {
+  display: block;
+  color: #fff;
+  height: 14px;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+footer > div > .left > nav > ul > .white > a:after {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  padding-left: 20px;
+  height: 14px;
+  content: "";
+}
+
+footer > div > .left > nav > ul > .white:nth-of-type(4) > a:after {
+  border-right: none;
+}
+
+footer > div > .left > nav > ul > .white:first-child > a {
+  padding-left: 0;
+}
+
+footer > div > .left > nav > ul > .white:nth-of-type(4) > a {
+  border-right: none;
+}
+
+footer > div > .left > nav > ul > .white:nth-of-type(3) > a,
+footer > div > .left > nav > ul > .white > a:hover {
+  color: #f3de2c;
+  text-decoration: none;
+}
+
+footer > div > .left > p {
+  padding: 20px 0 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+footer > div > .left > address > ol {
+  width: 800px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer > div > .left > address > ol > li {
+  color: #666;
+  font-weight: 500;
+  height: 22px;
+  padding-right: 6px;
+  line-height: 22px;
+}
+
+footer > div > .left > address > ol > .none {
+  border: none;
+}
+
+footer > div > .left > address > ol > li:after {
+  display: inline-block;
+  border-right: 1px solid #666;
+  height: 12px;
+  padding: 0 5px;
+  content: "";
+}
+
+footer > div > .left > address > ol > li:nth-of-type(4):after,
+footer > div > .left > address > ol > li:nth-of-type(6):after {
+  border-right: none;
+}
+
+footer > div > .right {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-left: 400px;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div > .right > select {
+  appearance: none;
+  background: url(./../images/icon_select_arrow_white.png) no-repeat 95% 50%;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #2b2b2b;
+  background-size: 10%;
+  border: 1px solid #555;
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독도알리미</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/function.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header>
+            <div class="bg">
+                <ol>
+                    <li>bg1</li>
+                    <li>bg2</li>
+                    <li>bg3</li>
+                </ol>
+            </div>
+            <div class="menu">
+                <h1><a href="#"><img src="./images/logo.png" alt="독도알리미"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li class="on"><a href="#">Home</a></li>
+                        <li><a href="#">독도 스토리</a></li>
+                        <li><a href="#">우리땅 독도</a></li>
+                        <li><a href="# ">독도의 진실</a></li>
+                        <li><a href="#">독도 영상</a></li>
+                        <li><a href="#">독도 갤러리</a></li>
+                        <li><a href="#">독도 소식</a></li>
+                    </ul>
+                </nav>
+
+                <select name="language">
+                    <option value="#">English</option>
+                    <option value="#">Japanese</option>
+                    <option value="#">China</option>
+                    <option value="#">Russia</option>
+                    <option value="#">France</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Garmany</option>
+                    <option value="#">Arabic</option>
+                    <option value="#">Thai</option>
+                    <option value="#">Vietnam</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Portugal</option>
+                </select>
+            </div>
+
+            <div class="dokdo">
+
+                <ol>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">독도라이브</a></li>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">유튜브</a></li>
+                </ol>
+
+                <ul class="pagination">
+                    <li class="prev"><a href="#">prev</a></li>
+                    <li class="stop"><a href="#">stop</a></li>
+                    <li class="play"><a href="#">play</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section>
+
+            <div id="dokdo">
+                <div>
+                    <h2>독도는 우리땅</h2>
+                    <p class="dokdo-tit">
+                        <span>DOKDO,</span><br />
+                        BEAUTIFUL<br />
+                        ISLAND OF KOREA
+                    </p>
+                    <h3>구성</h3>
+                    <p>
+                        독도는 화산활동에 의해 생성된 섬으로 2개의 큰 섬(동도, 서도)과 89개의 부속도서로
+                        구성되어 있으며, 총면적은 187,554㎡이다.
+                        동도는 유인등대 등 대부분의 시설들이 위치하고 있는 섬으로 높이는 98.6m, 둘레는 2.8㎞, 면적은 73,297㎡이다.
+                        서도는 높이 168.5m, 둘레 2.6㎞, 면적 88,740㎡이며 전체적으로 험준한 원추형의
+                        발달상태를 이루고 있으며, 심한 사면경사를 이루고 있다.
+                        기타 부속도서들의 총면적은 25,517㎡이며, 동도와 서도 사이의 해협은 폭 151m,
+                        길이는 약 330m, 수심은 10m 미만이다.
+                    </p>
+
+                    <h3>위치</h3>
+                    <p>(우)40240, 경상북도 울릉군 울릉읍 독도리 1~96번지 (분번포함 101필지)</p>
+
+                    <h3>독도 인구현황</h3>
+                    <p>
+                        독도의 주민은 고 최종덕씨가 1965년 3월에 최초로 거주했으며, 현재는
+                        김성도·김신열 부부가 주민등록상 거주민으로 거주하고 있다. 이들을 포함하여
+                        2019년 12월 기준으로 14명(14세대)이 등록되어 있다.
+                        독도에 근무하는 인원은 독도경비대원 약 40명, 포항지방해양항만청 소속의
+                        독도 등대관리원 3명, 울릉군청 소속의 독도관리사무소 직원 2명이 있다.
+                </div>
+            </div>
+
+            <div id="story">
+                <div>
+                    <!-- 모달창 -->
+                    <div class="shadow">
+                        <div class="comicbox">
+                            <img src="#" alt="#">
+                            <button class="close">닫기</button>
+                        </div>
+                    </div>
+
+                    <h2>만화로 알아보는 독도 이야기</h2>
+                    <p><img src="./images/story_tit.png" alt="#"></p>
+
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <span class="comic comic1">1화</span>
+                                <p><span class="tit-color">1화</span> 어린이 독도지킴이로 독도에 가다</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="comic comic2">2화</span>
+                                <p><span class="tit-color">2화</span> 독도에 사는 사람들</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="comic comic3">3화</span>
+                                <p><span class="tit-color">3화</span> 독도의 자연환경</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="comic comic4">4화</span>
+                                <p><span class="tit-color">4화</span> 독도의 이름과 역사</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="comic comic5">5화</span>
+                                <p><span class="tit-color">5화</span> 독도를 지킨 사람들</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="comic comic6">6화</span>
+                                <p><span class="tit-color">6화</span> 독도는 한국땅</p>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="truth">
+                <div>
+                    <!-- 모달창 -->
+                    <div class="shadow">
+                        <div class="truthbox">
+                            <img src="#" alt="#">
+                            <button class="close">닫기</button>
+                        </div>
+                    </div>
+
+                    <h2>독도의 진실</h2>
+                    <p><img src="./images/truth_tit.png" alt="#"></p>
+
+                    <ul>
+                        <li>
+                            <a href="#" class="truth-img">
+                                <ol>
+                                    <li><img src="./images/truth_img1.jpg" alt="세종실록지리지"></li>
+                                    <li class="year">1454</li>
+                                    <li class="line">line</li>
+                                    <li class="info">
+                                        <h3>세종실록지리지</h3>
+                                        <p>
+                                            우산과 무릉두 섬이 현의 정동쪽 바다 가운데 있다.<br />
+                                            두 섬은 서로 멀리 떨어져 있지 않아, 날씨가 맑으면 바라볼 수 있다.<br />
+                                            신라 때에 우산국 또는 울릉도라 하였다.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="truth-img">
+                                <ol>
+                                    <li><img src="./images/truth_img2.jpg" alt="세종실록지리지"></li>
+                                    <li class="year">1531</li>
+                                    <li class="line">line</li>
+                                    <li class="info">
+                                        <h3>신증동국여지승람</h3>
+                                        <p>
+                                            우산도·울릉도<br />
+                                            무릉(武陵)이라고도 하고, 우릉(羽陵)이라고도 한다.<br />
+                                            두 섬이 현(縣)의 정동쪽 바다 가운데 있다.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="truth-img">
+                                <ol>
+                                    <li class="height"><img src="./images/truth_img3.jpg" alt="세종실록지리지"></li>
+                                    <li class="year">1770</li>
+                                    <li class="line">line</li>
+                                    <li class="info">
+                                        <h3>동국문헌비고</h3>
+                                        <p>
+                                            우산도·울릉도 ... 두 섬으로 하나가 바로 우산이다.<br />
+                                            여지지에 이르기를, 울릉과우산은 모두 우산국의 땅인데,<br />
+                                            우산은 일본이 말하는 송도(松島)라고 하였다
+                                        </p>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ol>
+                                    <li class="height"><img src="./images/truth_img4.jpg" alt="세종실록지리지"></li>
+                                    <li class="year">1808</li>
+                                    <li class="line">line</li>
+                                    <li class="info">
+                                        <h3>만기요람</h3>
+                                        <p>
+                                            울릉도가 울진 정동쪽 바다 가운데 있다...<br />
+                                            여지지에 이르기를, 울릉과 우산은 모두 우산국의 땅인데,<br />
+                                            우산은 일본이 말하는 송도(松島)라고 하였다.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ol>
+                                    <li class="height"><img src="./images/truth_img5.jpg" alt="세종실록지리지"></li>
+                                    <li class="year">1908</li>
+                                    <li class="line">line</li>
+                                    <li class="info">
+                                        <h3>증보문헌비고</h3>
+                                        <p>
+                                            우산도·울릉도 ...<br />
+                                            두 섬으로 하나가 바로 우산이다.<br />
+                                            속(續 : 새로 추가한 내용) 지금은 울도군이 되었다.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div id="video">
+                <div>
+                    <div class="vid-tit">
+                        <h2>영상으로 보는 독도</h2>
+                        <span><img src="./images/video_tit.png" alt=""></span>
+                    </div>
+
+                    <div class="vid-big">
+                        <p><span>동북아역사재단 </span>독도체험관 미취학 아동(유치원, 어린이집 등) 및 초등학교 저학년 온라인 교육동영상 '독도보물찾기'</p>
+
+                        <iframe width="1179" height="663" src="https://www.youtube.com/embed/Dk7SLHp630k"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid-thmbs">
+                        <div class="vid-thmbs-cont">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <iframe width="330" height="185" src="https://www.youtube.com/embed/Dk7SLHp630k"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3><strong>동북아역사재단</strong><br />
+                                            독도체험관 미취학 아동(유치원, 어린이집 등) 및 초등학교 저학년 온라인 교육동영상 '독도보물찾기'
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <iframe width="330" height="185" src="https://www.youtube.com/embed/JBfE-qTPBFc"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3><strong>울산매일 UTV</strong><br />
+                                            독도영상(속이 뻥 뚫리는 드론 항공 촬영 영상) / [ENG] 4K Dokdo Drone Video
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <iframe width="330" height="185" src="https://www.youtube.com/embed/-IP_l9Q6mmw"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3><strong>K -독도</strong><br />
+                                            독도수비대강치
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <iframe width="330" height="185" src="https://www.youtube.com/embed/0CLZlPTCXs4"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3><strong>쯔양</strong><br />
+                                            기안84님과 독도새우 84마리 먹방
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <iframe width="330" height="185" src="https://www.youtube.com/embed/gGyJKKkZMBc"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3><strong>자이언츠 펭TV</strong><br />
+                                            독도가 한국땅인 이유 FULL 공개합니다
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <iframe width="330" height="185" src="https://www.youtube.com/embed/l1VVUp5H_AA"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3><strong>몽당오늘</strong><br />
+                                            오늘은 무슨 날이에요? 10월 25일 독도의 날
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="vid-prev" href="#"><span>prev</span></a>
+                        <a class="vid-next" href="#"><span>next</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery">
+                <div>
+                    <span><img src="./images/gallery_tit.png" alt="독도 갤러리"></span>
+
+                    <!-- 모달창 -->
+
+                    <div class="gall_shadow">
+
+                        <div class="gallbox gallbox1">
+                            <ol>
+                                <li class="on"><a href="#"><img src="./images/gallery/season_thum1.jpg" alt="#"></a>
+                                </li>
+                                <li><a href="#"><img src="./images/gallery/season_thum2.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/season_thum3.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/season_thum4.jpg" alt="#"></a></li>
+                            </ol>
+
+                            <div>
+                                <ul class="screen">
+                                    <li>
+                                        <p>&lt; 봄 - 서도 정상에서 바라본 동도 &gt;</p>
+                                        <img src="./images/gallery/season1.jpg" alt="독도의 봄">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 여름 - 서도 왕호장근 군락지, 탕건봉 &gt;</p>
+                                        <img src="./images/gallery/season2.jpg" alt="독도의 여름">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 가을 - 동도에서 바라본 탕건봉, 삼형제굴바위 &gt;</p>
+                                        <img src="./images/gallery/season3.jpg" alt="독도의 가을">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 겨울 - 동도 정상에서 바라본 서도의 설경 &gt;</p>
+                                        <img src="./images/gallery/season4.jpg" alt="독도의 겨울">
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="close">닫기</button>
+                        </div>
+
+                        <div class="gallbox gallbox2">
+                            <ol>
+                                <li class="on"><a href="#"><img src="./images/gallery/plant_thum1.jpg" alt="#"></a>
+                                </li>
+                                <li><a href="#"><img src="./images/gallery/plant_thum2.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/plant_thum3.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/plant_thum4.jpg" alt="#"></a></li>
+                            </ol>
+
+                            <div>
+                                <ul class="screen">
+                                    <li>
+                                        <p>&lt; 갯괴불주머니 &gt;</p>
+                                        <img src="./images/gallery/plant1.jpg" alt="갯괴불주머니">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 왕호장근 &gt;</p>
+                                        <img src="./images/gallery/plant2.jpg" alt="왕호장근">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 풍란 &gt;</p>
+                                        <img src="./images/gallery/plant3.jpg" alt="풍란">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 땅채송화 &gt;</p>
+                                        <img src="./images/gallery/plant4.jpg" alt="땅채송화">
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="close">닫기</button>
+                        </div>
+
+                        <div class="gallbox gallbox3">
+                            <ol>
+                                <li class="on"><a href="#"><img src="./images/gallery/animal_thum1.jpg" alt="#"></a>
+                                </li>
+                                <li><a href="#"><img src="./images/gallery/animal_thum2.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/animal_thum3.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/animal_thum4.jpg" alt="#"></a></li>
+                            </ol>
+
+                            <div>
+                                <ul class="screen">
+                                    <li>
+                                        <p>&lt; 포란 중인 괭이갈매기 &gt;</p>
+                                        <img src="./images/gallery/animal1.jpg" alt="포란 중인 괭이갈매기">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 독도에 돌아온 괭이갈매기 &gt;</p>
+                                        <img src="./images/gallery/animal2.jpg" alt="독도에 돌아온 괭이갈매기">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 3마리의 강치 &gt;</p>
+                                        <img src="./images/gallery/animal3.jpg" alt="3마리의 강치">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 독도강치동상 &gt;</p>
+                                        <img src="./images/gallery/animal4.jpg" alt="독도강치동상">
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="close">닫기</button>
+                        </div>
+
+                        <div class="gallbox gallbox4">
+                            <ol>
+                                <li class="on"><a href="#"><img src="./images/gallery/work_thum1.jpg" alt="#"></a>
+                                </li>
+                                <li><a href="#"><img src="./images/gallery/work_thum2.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/work_thum3.jpg" alt="#"></a></li>
+                                <li><a href="#"><img src="./images/gallery/work_thum4.jpg" alt="#"></a></li>
+                            </ol>
+
+                            <div>
+                                <ul class="screen">
+                                    <li>
+                                        <p>&lt; 이종상 화백 - 독도의 기II &gt;</p>
+                                        <img src="./images/gallery/work1.jpg" alt="이종상 화백 - 독도의 기II">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 정의부 작가 - 독도의 아침과 철새들 &gt;</p>
+                                        <img src="./images/gallery/work2.jpg" alt="전종철 작가 - 독도의 빛">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 류인선 작가 - 독도-동도에서 서도를 바라보다 &gt;</p>
+                                        <img src="./images/gallery/work3.jpg" alt="정의부 작가 - 독도의 아침과 철새들">
+                                    </li>
+                                    <li>
+                                        <p>&lt; 전종철 작가 - 독도의 빛 &gt;</p>
+                                        <img src="./images/gallery/work4.jpg" alt="류인선 작가 - 독도-동도에서 서도를 바라보다">
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class="close">닫기</button>
+                        </div>
+
+                    </div>
+
+                    <!-- 모달창 끝 -->
+
+                    <ul>
+                        <li class="gall gall1">
+                            <a href="#">
+                                <h3>독도의 사계</h3>
+                                <span class="view">view</span>
+                            </a>
+                        </li>
+                        <li class="gall gall2">
+                            <a href="#">
+                                <h3>독도의 식물</h3>
+                                <span class="view view2">view</span>
+                            </a>
+                        </li>
+                        <li class="gall gall3">
+                            <a href="#">
+                                <h3>독도의 동물</h3>
+                                <span class="view">view</span>
+                            </a>
+                        </li>
+                        <li class="gall gall4">
+                            <a href="#">
+                                <h3>작가 작품</h3>
+                                <span class="view view4">view</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="news">
+                <div>
+
+                    <div class="news-tit">
+                        <h2>궁금한 독도 소식</h2>
+                        <span><img src="./images/news_tit.png" alt="#"></span>
+                    </div>
+
+                    <div class="news-post">
+                        <p>전체게시물 10 건</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">작성일</th>
+                                    <th scope="col">조회</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td><a href="#">공동기획전 울릉도·독도 동해를 품다 개최</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><a href="#">독도박물관 제3전시실 개편</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><a href="#">울릉도 독도 특산식물 사진전</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a href="#">2021년 독도박물관-부산해양자연사박물관 공동기획전 "독도가 살아있다" 개최</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a href="#">"독도, 이야기를 품다" 전시개최 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="#">독도박물관 본관 임시휴관 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="#">추석 연휴 독도박물관 운영시설 휴관 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#">2020년 독도박물관-천안흥타령관 공동기획전 개최 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="#">2020년 독도박물관 특별전시회 독도의 과학 전시 개최 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#">안용복기념관 노후 시설 보강 공사로 인한 휴관 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>21.10.21</td>
+                                    <td>219</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+
+                    <div class="news-search">
+                        <select name="search">
+                            <option style='background-color:#ea5a32' value="#">제목</option>
+                            <option style='background-color:#ea5a32' value="#">글내용</option>
+                            <option style='background-color:#ea5a32' value="#">작성자</option>
+                        </select>
+                        <input type="search" id="search" />
+                        <input type="button" value="검색">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-all">
+                <div>
+                    <ul>
+                        <li><a href="#">저작권보호정책</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span><img src="./images/logo.png" alt="#"></span>
+                    <address>
+                        07740 서울시 강서구 화곡동<br />
+                        TEL) 010-9996-9661<br />
+                        <span>Copyright (C) 2021 독도알리미 All rights reserved.</span>
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <aside class="top-box">
+            <a href="#"><i class="fas fa-angle-up"></i>
+                <br />TOP</a>
+        </aside>
+    </div>
+</body>
+
+</html>
