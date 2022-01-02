@@ -498,8 +498,8 @@ section > #video > div > .vid-thmbs > .vid-thmbs-cont {
   position: relative;
   left: 50%;
   top: 47%;
-  width: 1026px;
-  margin-left: -516px;
+  width: 998px;
+  margin-left: -500px;
   margin-top: -125px;
 }
 section > #video > div > .vid-thmbs > .vid-thmbs-cont > ul {
@@ -515,6 +515,25 @@ section > #video > div > .vid-thmbs > .vid-thmbs-cont > ul > li {
 }
 section > #video > div > .vid-thmbs > .vid-thmbs-cont > ul > li > a {
   display: inline-block;
+}
+section > #video > div > .vid-thmbs > .vid-thmbs-cont > ul > li > a > span {
+  display: block;
+  width: 100%;
+  height: 185px;
+}
+section
+  > #video
+  > div
+  > .vid-thmbs
+  > .vid-thmbs-cont
+  > ul
+  > li
+  > a
+  > span
+  > img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 section > #video > div > .vid-thmbs > .vid-thmbs-cont > ul > li > a > h3 {
   width: 300px;

@@ -248,7 +248,6 @@ $(function(){
 
     const $btnGoSite = $('#portfolio> .slides > .slides-container > figure > figcaption > .btn > .gosite');
     
-
     $('.gosite_1').attr({href : './site/dokdo/index.html'});
     $('.gosite_12').attr({href : './site/babymeal/index.html'});
     $('.gosite_2').attr({href : './site/yun/index.html'});
@@ -370,6 +369,21 @@ $(function(){
         $portLightbox.show();
     });
 
+    $('.proc').on('click', function(evt){
+
+        evt.preventDefault();
+
+        $('body').css('overflow', 'hidden'); 
+
+        $portLightbox.children('img').attr({
+            src : './../images/portfolio/dokdo.jpg',
+            alt : '배터리 상품기술서'
+        });
+
+        $portShadow.show();
+        $portLightbox.show();
+    });
+
    //portfolio-shadow
     $portLightbox.on('click', function(evt){
         evt.stopPropagation();
@@ -389,6 +403,7 @@ $(function(){
         $portShadow.hide();
 
     });
+
 
 	//inview 이벤트는 화면이 요소가 출현했을 때 작동
 	$(".skill").on("inview", function(evt, visible){

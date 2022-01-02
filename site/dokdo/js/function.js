@@ -23,10 +23,10 @@ $(function(){
         intervalKey = setInterval(function(){
           oldIdx = nowIdx;
   
-          if(nowIdx>0){
-            nowIdx --;
+          if(nowIdx<2){
+            nowIdx ++;
           }else{
-            nowIdx = 2;
+            nowIdx = 0;
           }
   
           bgFadeFn();
@@ -214,7 +214,6 @@ $(function(){
         
         const $vidBig = $('.vid-big > iframe');
         const $vidBigTit_1 = $('.vid-big > p');
-        const $vidBigTit_2 = $('.vid-big > p > span');
         const $vidCont = $('.vid-thmbs > .vid-thmbs-cont > ul > li > a');
 
         const $vidArrSrc = ['https://www.youtube.com/embed/Dk7SLHp630k','https://www.youtube.com/embed/JBfE-qTPBFc','https://www.youtube.com/embed/-IP_l9Q6mmw','https://www.youtube.com/embed/0CLZlPTCXs4','https://www.youtube.com/embed/gGyJKKkZMBc','https://www.youtube.com/embed/l1VVUp5H_AA'];

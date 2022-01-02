@@ -46,7 +46,7 @@ $(function(){
   
       //페이드
       $fadeBanner.eq(oldIdx).stop().fadeOut(1000);
-      $fadeBanner.eq(nowIdx).stop().fadeIn(1000); 
+      $fadeBanner.eq(nowIdx).stop().fadeIn(1000);
     }
 
     $indicator.on('click', function(evt){
@@ -72,12 +72,12 @@ $(function(){
         }else{
           nowIdx = 0;
         }
+
         fadeFn();
       },4000);
     }
 
     fadeAutoPlay();
-   
 
     // 이벤트 영역----------------------------------
 

@@ -28,12 +28,12 @@
   }
 }
 
-body {
+/* body {
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 #wrap .h-fixed {
   position: fixed;
@@ -1060,7 +1060,7 @@ body {
   left: 50%;
   top: 100px;
   width: 1000px;
-  height: 800px;
+  height: 780px;
   margin-left: -500px;
 }
 #wrap section#portfolio > .port-shadow > .port-lightbox > img {
