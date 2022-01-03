@@ -258,7 +258,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-3.jpg',
+            src : './images/portfolio/portfolio-3.jpg',
             alt : '리빙데드돌'
         });
         $portShadow.show();
@@ -271,7 +271,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-4.jpg',
+            src : './images/portfolio/portfolio-4.jpg',
             alt : '오메가시계'
         });
         $portShadow.show();
@@ -284,7 +284,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-5.png',
+            src : './images/portfolio/portfolio-5.png',
             alt : '안나수이'
         });
         $portShadow.show();
@@ -297,7 +297,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-6.png',
+            src : './images/portfolio/portfolio-6.png',
             alt : '하이네켄'
         });
         $portShadow.show();
@@ -310,7 +310,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-7.png',
+            src : './images/portfolio/portfolio-7.png',
             alt : '아임리얼'
         });
         $portShadow.show();
@@ -323,7 +323,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-8.png',
+            src : './images/portfolio/portfolio-8.png',
             alt : '랑콤'
         });
         $portShadow.show();
@@ -336,7 +336,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-9.jpg',
+            src : './images/portfolio/portfolio-9.jpg',
             alt : '캐릭터'
         });
         $portShadow.show();
@@ -349,7 +349,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-10.png',
+            src : './images/portfolio/portfolio-10.png',
             alt : 'USB 상품기술서'
         });
         $portShadow.show();
@@ -362,7 +362,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/portfolio-11.png',
+            src : './images/portfolio/portfolio-11.png',
             alt : '배터리 상품기술서'
         });
         $portShadow.show();
@@ -376,7 +376,7 @@ $(function(){
         $('body').css('overflow', 'hidden'); 
 
         $portLightbox.children('img').attr({
-            src : './../images/portfolio/dokdo.jpg',
+            src : './images/portfolio/dokdo.jpg',
             alt : '배터리 상품기술서'
         });
 
