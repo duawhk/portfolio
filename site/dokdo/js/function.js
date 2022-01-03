@@ -120,7 +120,7 @@ $(function(){
 
 
       //독도 이야기
-        const comicArrSrc =['./../images/ani_dokdo_1.jpg','./../images/ani_dokdo_2.jpg','./../images/ani_dokdo_3.jpg','./../images/ani_dokdo_4.jpg','./../images/ani_dokdo_5.jpg','./../images/ani_dokdo_6.jpg'];
+        const comicArrSrc =['./images/ani_dokdo_1.jpg','./images/ani_dokdo_2.jpg','./images/ani_dokdo_3.jpg','./images/ani_dokdo_4.jpg','./images/ani_dokdo_5.jpg','./images/ani_dokdo_6.jpg'];
         const comicArrAlt =['1화 어린이 독도지킴이로 독도에 가다','2화 독도에 사는 사람들','3화 독도의 자연환경','4화 독도의 이름과 역사','5화 독도를 지킨 사람들','6화 독도는 한국땅'];
 
         const $comicMnu = $('section > #story > div > ol > li > a > .comic');
@@ -162,7 +162,7 @@ $(function(){
 
 
         //독도의 진실
-        const arrSrc = ['./../images/saejong.jpg','./../images/sinjeung.jpg','./../images/dongkook.jpg','./../images/mangi.jpg','./../images/jeungbo.jpg'];
+        const arrSrc = ['./images/saejong.jpg','./images/sinjeung.jpg','./images/dongkook.jpg','./images/mangi.jpg','./images/jeungbo.jpg'];
         const arrAlt = ['세종실록지리지','신증동국여지승람','동국문헌비고','만기요람','증보문헌비고'];
 
         const $truthMnu = $('section > #truth > div > ul > li > a');
@@ -278,9 +278,6 @@ $(function(){
         const $gallThums_2 = $('.gallbox2 > ol > li > a');
         const $gallThums_3 = $('.gallbox3 > ol > li > a');
         const $gallThums_4 = $('.gallbox4 > ol > li > a');
-
-        const $gallBtnPrev = $('.gallbox > .btn > .prev');
-        const $gallBtnNext = $('.gallbox > .btn > .next');
         const $gallClse = $('.gall_shadow > .gallbox > .close'); 
 
         
