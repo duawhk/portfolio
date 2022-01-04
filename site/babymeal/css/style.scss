@@ -221,15 +221,15 @@
           position: absolute;
           left: 50%;
           bottom: 8px;
-          width: 82px;
-          margin-left: -40px;
+          width: 50px;
+          margin-left: -25px;
           > li {
             width: 24px;
             text-indent: -9999px;
-            background-image: url(./../images/btn_spot.png);
+            background-image: url(./../images/btn_spot_on.png);
             &.on,
             &:hover {
-              background-position: 0 -25px;
+              opacity: 0.3;
             }
             > a {
               display: block;
