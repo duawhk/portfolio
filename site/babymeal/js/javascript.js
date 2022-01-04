@@ -32,21 +32,24 @@ $(function(){
     //페이드 배너(비주얼 영역)------------------------------
     const $indicator = $('.indicator>li>a');
     const $fadeBanner =$('.fade-banner>li');
-  
+
     let nowIdx = 0;
     let oldIdx = nowIdx;
     let intervalKey = null;
 
+    function fadefn(){
 
-  //페이드 함수
-    function fadeFn(){
-  
+      $fadeBanner.eq(oldIdx).stop().fadeOut(800);
+      $fadeBanner.eq(nowIdx).stop().fadeIn(800);
+
       //활성화
       $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
-  
-      //페이드
-      $fadeBanner.eq(oldIdx).stop().fadeOut(1000);
-      $fadeBanner.eq(nowIdx).stop().fadeIn(1000);
+    }
+
+    function fadeAutoPlay(){
+      intervalKey = setInterval(function(){
+        $fadeBanner.fadeToggle(800);
+      },5000);        
     }
 
     $indicator.on('click', function(evt){
@@ -56,29 +59,15 @@ $(function(){
       oldIdx = nowIdx;
       nowIdx = $indicator.index(this);
 
-      fadeFn();
+      fadefn();
+      
+    });
 
-     });
-
-    //오토플레이 함수
-    function fadeAutoPlay(){ 
-
-      intervalKey = setInterval(function(){
-
-        oldIdx = nowIdx;
-
-        if(nowIdx<2){
-          nowIdx ++;
-        }else{
-          nowIdx = 0;
-        }
-
-        fadeFn();
-      },4000);
-    }
 
     fadeAutoPlay();
 
+  
+   
     // 이벤트 영역----------------------------------
 
     const $fadeCont = $('.info_fade>ul>li');
