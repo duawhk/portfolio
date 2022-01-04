@@ -28,67 +28,12 @@
   }
 }
 
-@-webkit-keyframes motion {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+/* body {
+  -ms-overflow-style: none;
 }
-
-@keyframes motion {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
+::-webkit-scrollbar {
+  display: none;
+} */
 
 #wrap .h-fixed {
   position: fixed;
@@ -239,7 +184,7 @@
 #wrap section#visual {
   position: relative;
   min-width: 1100px;
-  background-image: url(./../images/visual.png);
+  background-image: url(./../images/visual_2.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -275,6 +220,11 @@
 #wrap section#visual > .intro > p {
   color: #f7f7f7;
   letter-spacing: 1px;
+  margin-top: 10px;
+}
+#wrap section#visual > .intro > p > span {
+  color: #68c3a3;
+  font-weight: 500;
 }
 
 #wrap section#visual > .intro > .myico {
@@ -348,7 +298,8 @@
 }
 
 #wrap section#aboutme > .visual {
-  background-image: url(../images/aboutme/aboutmeVisual01.png);
+  background-image: url(../images/aboutme/aboutme_jyj.jpg);
+  background-size: cover;
 }
 
 #wrap section#aboutme > .visual > ol {
@@ -431,6 +382,7 @@
 #wrap section#aboutme > .intro > h3 {
   position: relative;
   margin-bottom: 56px;
+  margin-left: -170px;
   font-size: 32px;
   text-align: center;
   font-weight: 500;
@@ -473,6 +425,27 @@
   font-weight: 400;
 }
 
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    transform: translate(4px, 4px);
+  }
+  80% {
+    transform: translate(4px, -4px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 #wrap section#aboutme > .intro > .program {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,10 +480,8 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 #wrap section#aboutme > .intro > .program > ol > li:hover {
-  -webkit-animation: motion 0.9s both;
-  animation: motion 0.9s both;
+  animation: shake 0.2s linear infinite both;
 }
 
 #wrap section#aboutme > .intro > .program > ol > li:nth-child(1) {
@@ -804,6 +775,71 @@
   padding-top: 96px;
 }
 
+/* 모달창 */
+#wrap section#aboutme > .resume > .resume-shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+#wrap section#aboutme > .resume > .resume-shadow > .resume-lightbox {
+  position: fixed;
+  left: 50%;
+  top: 50px;
+  margin-left: -400px;
+  width: 860px;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-menu {
+  width: 860px;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-menu > ul > li {
+  width: 200px;
+  height: 100px;
+  background-image: url(./../images/aboutme/resume/resume-thum-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-menu > ul > li:hover,
+#wrap section#aboutme > .resume > .resume-shadow .resume-menu > ul > li.on {
+  border: 3px solid #fff;
+  box-sizing: border-box;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-menu > ul > li > a {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-screen {
+  position: relative;
+  overflow: hidden;
+  width: 860px;
+  height: 600px;
+}
+#wrap section#aboutme > .resume > .resume-shadow .resume-screen > img {
+  display: block;
+  width: 100%;
+}
+
+#wrap section#aboutme > .resume > .resume-shadow > .resume-lightbox > .clse {
+  position: absolute;
+  right: 0;
+}
+
+/* 모달창 끝*/
+
 #wrap section#aboutme > .resume > div {
   padding: 0 30px;
   display: -webkit-box;
@@ -913,10 +949,10 @@
 }
 
 #wrap section#aboutme > .workstyle > .container > ol:after {
-  left: 60%;
+  left: 70%;
   top: 60px;
   letter-spacing: 0.1em;
-  content: '코딩 스타일을 좋아합니다!';
+  content: '작업을 좋아합니다!';
 }
 
 #wrap section#aboutme > .workstyle > .container > ol > li {
@@ -998,6 +1034,10 @@
   content: '';
 }
 
+#wrap section#aboutme > .talk > ul > li:nth-of-type(3) > p > span {
+  line-height: 50px;
+}
+
 #wrap section#aboutme > .talk > ul > li:nth-child(1) > h4:after {
   background-image: url(../images/aboutme/friend-1.jpg);
 }
@@ -1026,6 +1066,40 @@
   text-align: center;
 }
 
+/* 모달창 */
+#wrap section#portfolio > .port-shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+#wrap section#portfolio > .port-shadow > .port-lightbox {
+  display: none;
+  overflow: scroll;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  width: 1000px;
+  height: 780px;
+  margin-left: -500px;
+}
+#wrap section#portfolio > .port-shadow > .port-lightbox > img {
+  display: block;
+  width: 100%;
+}
+
+#wrap section#portfolio > .port-shadow > .port-lightbox > .clse {
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  margin-left: 510px;
+}
+/* 모달창 끝*/
+
 #wrap section#portfolio > article {
   width: 1100px;
   margin: 0 auto;
@@ -1036,13 +1110,15 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 840px;
+  /* justify-content: space-between; */
+  flex-flow: row wrap;
+  width: 1100px;
   margin: 0 auto 96px;
 }
 
 #wrap section#portfolio > .slides > .slides-pagination > li {
   width: 120px;
+  padding: 20px 10px 0 0;
 }
 
 #wrap section#portfolio > .slides > .slides-pagination > li > a {
@@ -1114,6 +1190,28 @@
   margin-top: 8px;
   color: #909090;
   font-size: 16px;
+}
+
+#wrap section#portfolio
+  > .slides
+  > .slides-container
+  > figure
+  > figcaption
+  > .tip_1
+  > a {
+  margin-top: 8px;
+  color: #909090;
+  font-size: 14px;
+}
+
+#wrap section#portfolio
+  > .slides
+  > .slides-container
+  > figure
+  > figcaption
+  > .tip_1:hover
+  > a {
+  text-decoration: underline;
 }
 
 #wrap section#portfolio
@@ -1242,6 +1340,7 @@
 
 #wrap section#portfolio > .intro .container > h3 {
   position: relative;
+  margin-left: -260px;
   margin-bottom: 56px;
   font-size: 32px;
   text-align: center;
@@ -1306,8 +1405,10 @@
   bottom: 0;
   z-index: -1;
   width: 470px;
-  height: 300px;
-  background-image: url(./../images/portfolio/code01.png);
+  height: 301px;
+  background-image: url(./../images/portfolio/design.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
   content: '';
 }
 
@@ -1541,7 +1642,6 @@
   height: 117px;
   opacity: 0.1;
 }
-
 #wrap section#portfolio > .works {
   position: relative;
   width: 1280px;
@@ -1560,7 +1660,6 @@
 }
 
 #wrap section#portfolio > .works > .slide-list {
-  top: 977px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1572,40 +1671,41 @@
 #wrap section#portfolio > .works > .slide-list > li {
   position: relative;
   width: 384px;
-  height: 620px;
   background-color: #fff;
   -webkit-box-shadow: 0 7px 20px 0 rgba(182, 245, 206, 0.2);
   box-shadow: 0 7px 20px 0 rgba(182, 245, 206, 0.2);
-  padding: 48px 0 0 65px;
+  padding-top: 24px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #wrap section#portfolio > .works > .slide-list > li > h4 {
-  color: #454249;
-  font-size: 20px;
-  font-weight: 500;
   padding-bottom: 36px;
+  color: #454249;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
 }
 
-#wrap section#portfolio > .works > .slide-list > li > p {
+#wrap section#portfolio > .works > .slide-list > li > p:nth-of-type(1) {
+  padding: 0 65px;
   color: #65616b;
   font-size: 16px;
   line-height: 24px;
 }
 
-#wrap section#portfolio > .works > .slide-list > li > p > .tip {
+#wrap section#portfolio > .works > .slide-list > li > p:nth-of-type(1) > .tip {
   display: block;
   color: #ccc;
   font-size: 13px;
   padding-top: 20px;
 }
 
-#wrap section#portfolio > .works > .slide-list > li > p > .proc {
+#wrap section#portfolio > .works > .slide-list > li > .btnShow {
   display: block;
   width: 180px;
   height: 46px;
-  margin: 20px 0 30px;
+  margin: 20px auto 40px;
   color: #fff;
   font-size: 18px;
   line-height: 46px;
@@ -1619,43 +1719,18 @@
   transition: ease-out 0.3s;
 }
 
-#wrap section#portfolio > .works > .slide-list > li > p > .proc:hover {
+#wrap section#portfolio > .works > .slide-list > li > .btnShow:hover {
   -webkit-box-shadow: inset 180px 0 0 0 #454249;
   box-shadow: inset 180px 0 0 0 #454249;
 }
 
-#wrap section#portfolio > .works > .slide-list > li > p > .frame {
+#wrap section#portfolio > .works > .slide-list > li > .frame {
   display: block;
-  width: 321px;
-  margin-left: -35px;
 }
 
-#wrap section#portfolio > .works > .slide-list > li > p > .frame > img {
+#wrap section#portfolio > .works > .slide-list > li > .frame img {
   display: block;
   width: 100%;
-}
-
-#wrap section#portfolio > .works > .slide-list > li > p > .frame > .btn {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 40px;
-  width: 194px;
-  height: 65px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 65px;
-  text-align: center;
-  background-color: #444;
-  border: 2px solid #444;
-}
-
-#wrap section#portfolio > .works > .slide-list > li > p > .frame > .btn:hover {
-  color: #68c3a3;
-  border-color: #68c3a3;
-  background-color: #fff;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
 }
 
 #wrap section#uxdesign article {
@@ -1688,7 +1763,9 @@
 }
 
 #wrap section#uxdesign > .slides > .slides-container > li.banner_1 {
-  background-image: url(../images/uxdesign/slides/slide_1.png);
+  background-image: url(../images/uxdesign/slides/slide_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #wrap section#uxdesign > .slides > .slides-container > li.banner_2 {
@@ -1779,6 +1856,7 @@
 
 #wrap section#uxdesign > .intro > h3 {
   position: relative;
+  margin-left: -50px;
   margin-bottom: 56px;
   font-size: 32px;
   text-align: center;
@@ -1819,7 +1897,9 @@
 }
 
 #wrap section#uxdesign > .intro > p > strong {
+  display: block;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 
 #wrap section#uxdesign > .intro > .bus-alarm {
@@ -1891,6 +1971,7 @@
   display: flex;
   position: relative;
   height: 280px;
+  z-index: 1;
 }
 
 #wrap section#uxdesign > .uxui > .uxui-case > .ui-frame {
@@ -1902,7 +1983,6 @@
   margin-left: -420px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
-  z-index: 300;
 }
 
 #wrap section#uxdesign > .uxui > .uxui-case > .ui-frame > img {
@@ -2032,8 +2112,8 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 80px 50px;
-  background-image: url(./../images/uidesign/gallery/mino-main.png),
-    url(./../images/uidesign/gallery/mino-bg.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi-main.png),
+    url(./../images/uidesign/gallery/kkomagi-bg.png);
   background-position: 60px 230px, 0 0;
   background-size: 380px auto, cover;
   background-repeat: no-repeat;
@@ -2088,7 +2168,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:hover {
-  border: 5px solid #b73523;
+  border: 5px solid #f5a83d;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
@@ -2110,7 +2190,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(1) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-01.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-01.png);
 }
 
 #wrap section#uidesign
@@ -2118,7 +2198,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(2) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-02.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-02.png);
 }
 
 #wrap section#uidesign
@@ -2126,7 +2206,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(3) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-03.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-03.png);
 }
 
 #wrap section#uidesign
@@ -2134,7 +2214,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(4) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-04.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-04.png);
 }
 
 #wrap section#uidesign
@@ -2142,7 +2222,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(5) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-05.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-05.png);
 }
 
 #wrap section#uidesign
@@ -2150,7 +2230,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(6) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-06.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-06.png);
 }
 
 #wrap section#uidesign
@@ -2158,7 +2238,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(7) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-07.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-07.png);
 }
 
 #wrap section#uidesign
@@ -2166,7 +2246,7 @@
   > .gallery-container
   > .gallery-thmbs
   > li:nth-child(8) {
-  background-image: url(./../images/uidesign/gallery/mino_thmb-08.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-08.png);
 }
 
 #wrap section#uidesign > .gallery > .gallery-container > .gallery-screen {
@@ -2174,10 +2254,10 @@
   height: 350px;
   margin-bottom: 20px;
   text-indent: -9999px;
-  background-image: url(./../images/uidesign/gallery/mino-01.png);
+  background-image: url(./../images/uidesign/gallery/kkomagi_thmb-01.png);
   background-position: 50% 50%;
   background-size: cover;
-  border: 8px solid #311c0f;
+  border: 8px solid #583827;
   border-radius: 20px;
 }
 
@@ -2335,11 +2415,12 @@
   position: absolute;
   right: 40px;
   top: 50%;
-  width: 53px;
-  height: 68px;
+  width: 90px;
+  height: 105px;
   margin-top: -34px;
   background-image: url(./../images/footer_logo.png);
   content: '';
+  border-color: #000;
 }
 
 #wrap aside {

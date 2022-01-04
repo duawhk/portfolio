@@ -218,7 +218,7 @@ $(function(){
 
         const $vidArrSrc = ['https://www.youtube.com/embed/Dk7SLHp630k','https://www.youtube.com/embed/JBfE-qTPBFc','https://www.youtube.com/embed/-IP_l9Q6mmw','https://www.youtube.com/embed/0CLZlPTCXs4','https://www.youtube.com/embed/gGyJKKkZMBc','https://www.youtube.com/embed/l1VVUp5H_AA'];
 
-        const $vidArrTit_1 = ['[동북아역사재단] 독도체험관 미취학 아동(유치원, 어린이집 등) 및 초등학교 저학년 온라인 교육동영상 독도보물찾기','[울산매일] UTV 독도영상(속이 뻥 뚫리는 드론 항공 촬영 영상) / [ENG] 4K Dokdo Drone Video','[K -독도] 독도수비대강치','[쯔양] 기안84님과 독도새우 84마리 먹방','[자이언츠 펭TV] 독도가 한국땅인 이유 FULL 공개합니다','[몽당오늘] 오늘은 무슨 날이에요? 10월 25일 독도의 날'];
+        const $vidArrTit_1 = ['동북아역사재단 독도체험관 미취학 아동(유치원, 어린이집 등) 및 초등학교 저학년 온라인 교육동영상 독도보물찾기','울산매일 UTV 독도영상(속이 뻥 뚫리는 드론 항공 촬영 영상) / [ENG] 4K Dokdo Drone Video','K -독도 독도수비대강치','쯔양 기안84님과 독도새우 84마리 먹방','자이언츠 펭TV 독도가 한국땅인 이유 FULL 공개합니다','몽당오늘 오늘은 무슨 날이에요? 10월 25일 독도의 날'];
        
         function vidMoveFn(){
           $vidContainer.stop().animate({
@@ -236,12 +236,7 @@ $(function(){
           }else{
             nowIdx=5;
           }
-          const $container = $('.vid-thmbs-cont > ul');
-          const $slides = $('.vid-thmbs-cont > ul > li');
-          $slides.last().prependTo($container);
-          $container.css({left : -348});
-          $container.stop().animate({left : 0},400,'easeInOutCubic',function(){});
-
+          vidMoveFn();
         });
 
         //다음
@@ -254,14 +249,7 @@ $(function(){
           }else{
             nowIdx=0;
           }
-          const $container = $('.vid-thmbs-cont > ul');
-          const $slides = $('.vid-thmbs-cont > ul > li');
-  
-          $container.stop().animate({ left : -348},400,function(){
-  
-            $slides.first().appendTo($container);
-            $container.css({left : 0});
-          });
+          vidMoveFn();
         });
 
         //큰 영상
