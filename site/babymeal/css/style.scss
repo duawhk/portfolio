@@ -204,13 +204,15 @@
               width: 1920px;
               &:nth-of-type(1) {
                 display: block;
+                background-image: url(./../images/main_banner_01.jpg);
+              }
+              &:nth-of-type(2) {
+                background-image: url(./../images/main_banner_02.jpg);
               }
               > a {
                 display: block;
-                height: 100%;
-                > img {
-                  display: block;
-                }
+                height: 485px;
+                text-indent: -9999px;
               }
             }
           }
@@ -225,9 +227,8 @@
           margin-left: -25px;
           > li {
             width: 24px;
-            text-indent: -9999px;
             background-image: url(./../images/btn_spot_on.png);
-            opacity: 0.4;
+            opacity: 0.3;
             &.on,
             &:hover {
               opacity: 1;
@@ -235,6 +236,7 @@
             > a {
               display: block;
               height: 24px;
+              text-indent: -9999px;
             }
           }
         }

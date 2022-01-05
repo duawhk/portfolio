@@ -234,15 +234,17 @@
 
 #wrap > section > article.banner > div > .fade-container > ul.fade-banner > li:nth-of-type(1) {
   display: block;
+  background-image: url(./../images/main_banner_01.jpg);
+}
+
+#wrap > section > article.banner > div > .fade-container > ul.fade-banner > li:nth-of-type(2) {
+  background-image: url(./../images/main_banner_02.jpg);
 }
 
 #wrap > section > article.banner > div > .fade-container > ul.fade-banner > li > a {
   display: block;
-  height: 100%;
-}
-
-#wrap > section > article.banner > div > .fade-container > ul.fade-banner > li > a > img {
-  display: block;
+  height: 485px;
+  text-indent: -9999px;
 }
 
 #wrap > section > article.banner > div > ol.indicator {
@@ -261,9 +263,8 @@
 
 #wrap > section > article.banner > div > ol.indicator > li {
   width: 24px;
-  text-indent: -9999px;
   background-image: url(./../images/btn_spot_on.png);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 #wrap > section > article.banner > div > ol.indicator > li.on, #wrap > section > article.banner > div > ol.indicator > li:hover {
@@ -273,6 +274,7 @@
 #wrap > section > article.banner > div > ol.indicator > li > a {
   display: block;
   height: 24px;
+  text-indent: -9999px;
 }
 
 #wrap > section > article.small-box {

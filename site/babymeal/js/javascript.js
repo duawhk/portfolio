@@ -37,19 +37,12 @@ $(function(){
     let oldIdx = nowIdx;
     let intervalKey = null;
 
-    function fadefn(){
-
-      $fadeBanner.eq(oldIdx).stop().fadeOut(800);
-      $fadeBanner.eq(nowIdx).stop().fadeIn(800);
-
-      //활성화
-      $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
-    }
-
     function fadeAutoPlay(){
       intervalKey = setInterval(function(){
-        $fadeBanner.fadeToggle(800);
-      },5000);        
+        
+        $fadeBanner.fadeToggle(1000); 
+        $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');      
+      },5000);  
     }
 
     $indicator.on('click', function(evt){
@@ -59,14 +52,16 @@ $(function(){
       oldIdx = nowIdx;
       nowIdx = $indicator.index(this);
 
-      fadefn();
+      
+      //활성화
+      $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
+      
+      $fadeBanner.fadeToggle(1000); 
       
     });
 
-
     fadeAutoPlay();
-
-  
+   
    
     // 이벤트 영역----------------------------------
 

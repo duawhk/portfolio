@@ -480,12 +480,7 @@ section > #video > div > .vid-big > p {
   font-size: 20px;
   font-weight: 500;
 }
-section > #video > div > .vid-big > p > span {
-  color: #073f68;
-  font-size: 22px;
-  font-weight: 600;
-  margin-right: 10px;
-}
+
 section > #video > div > .vid-thmbs {
   display: flex;
   position: relative;
