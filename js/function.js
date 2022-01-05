@@ -572,6 +572,21 @@ $(function(){
  
         //방법-2
         //다음 버튼을 클릭했을 때 작성하 코드를 그대로 복붙해도 됨
+        if(nowIdx<=3){
+            nowIdx++;
+        }else{
+            nowIdx = 0;
+        }
+
+        //컨테이너 이동
+        $container.stop().animate({left : -1100},400,"easeInOutCubic",function(){            
+            const $slides = $('.slides-container>li');//li 5개
+            $slides.first().appendTo($container);
+            $container.css({left:0});
+        });
+        
+        indicatorFn();//인디케이터 활성화
+
 
       },5000);
 
