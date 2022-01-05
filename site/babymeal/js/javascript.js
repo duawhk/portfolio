@@ -37,11 +37,17 @@ $(function(){
     let oldIdx = nowIdx;
     let intervalKey = null;
 
+    function indicatorFn(){
+
+      $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');           
+    }
+
     function fadeAutoPlay(){
       intervalKey = setInterval(function(){
-        
+
         $fadeBanner.fadeToggle(1000); 
-        $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');      
+        indicatorFn();
+
       },5000);  
     }
 
@@ -52,11 +58,10 @@ $(function(){
       oldIdx = nowIdx;
       nowIdx = $indicator.index(this);
 
-      
       //활성화
-      $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
-      
-      $fadeBanner.fadeToggle(1000); 
+      indicatorFn();
+
+      $fadeBanner.fadeToggle(1000);  
       
     });
 
