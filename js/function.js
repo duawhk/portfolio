@@ -158,7 +158,7 @@ $(function(){
     const $resumeScreen = $('.resume-screen');
     const $resumeBtn = $('.resume-lightbox>.clse');
 
-    const $resumeArrSrc = ['./../images/aboutme/resume/resume-1.jpg','./../images/aboutme/resume/coverletter-1.jpg','./../images/aboutme/resume/coverletter-2.jpg','./../images/aboutme/resume/coverletter-3.jpg'];
+    const $resumeArrSrc = ['./images/aboutme/resume/resume-1.jpg','./images/aboutme/resume/coverletter-1.jpg','./images/aboutme/resume/coverletter-2.jpg','./images/aboutme/resume/coverletter-3.jpg'];
     const $resumeArrAlt = ['온라인이력서','성장과정','생활신조','입사포부'];
 
 
