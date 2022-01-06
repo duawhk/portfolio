@@ -648,7 +648,7 @@ section > #gallery > div > ul > .gall {
   position: relative;
   overflow: hidden;
   width: 700px;
-  height: 467px;
+  height: 567px;
 }
 .gall_shadow > .gallbox > div > .screen {
   display: flex;
@@ -687,7 +687,7 @@ section > #gallery > div > ul > .gall {
 .gall_shadow > .gallbox > .close {
   position: fixed;
   left: 50%;
-  top: 670px;
+  top: 760px;
   width: 50px;
   height: 30px;
   color: #fff;
