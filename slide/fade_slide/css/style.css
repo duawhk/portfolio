@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+#wrap {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+/* slides */
+.slides {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  border: 1px solid #ccc;
+}
+.slides > .slides-container > li {
+  display: none;
+}
+.slides > .slides-container > li:nth-of-type(1) {
+  display: block;
+}
+.slides > .slides-container > li > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 410px;
+  height: 426px;
+  padding: 70px 0 70px 50px;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+}
+.slides > .slides-container > li > div > a {
+  display: block;
+  width: 410px;
+}
+.slides > .slides-container > li > div > a > h2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.slides > .slides-container > li > div > a > p {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 20px 0 40px 0;
+}
+.slides > .slides-container > li > div > span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.slides > .slides-container > li > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 870px;
+  height: 426px;
+  text-indent: -9999px;
+  background-size: contain;
+}
+.slides > .slides-container > li:nth-of-type(1) > span {
+  background-image: url(./../images/new_slide_img1.jpg);
+}
+.slides > .slides-container > li:nth-of-type(2) > span {
+  background-image: url(./../images/new_slide_img2.jpg);
+}
+.slides > .slides-container > li:nth-of-type(3) > span {
+  background-image: url(./../images/new_slide_img3.jpg);
+}
+.slides > .slides-container > li:nth-of-type(4) > span {
+  background-image: url(./../images/new_slide_img4.jpg);
+}
+.slides > .slides-container > li:nth-of-type(5) > span {
+  background-image: url(./../images/new_slide_img5.jpg);
+}
+.slides > .slides-container > li > span > a {
+  display: block;
+  height: 100%;
+}
+
+/* indicator */
+.indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+}
+.indicator > ol {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+.indicator > ol > li {
+  width: 18px;
+  text-indent: -9999px;
+  background-image: url(./../images/bul.png);
+}
+.indicator > ol > li > a {
+  display: block;
+  height: 18px;
+}
+.indicator > ol > li:hover,
+.indicator > ol > li.on {
+  background-position: 0 -18px;
+}
+
+/* btn */
+.btn > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+}
+.btn > .prev {
+  left: 0;
+}
+.btn > .next {
+  left: 40px;
+}
+
+/* footer */
+footer > address {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
